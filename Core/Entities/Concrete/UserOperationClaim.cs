@@ -1,11 +1,15 @@
 ﻿using System;
 namespace Core.Entities.Concrete
 {
-    public class UserOperationClaim
+    public class UserOperationClaim : IEntity
     {
-        public UserOperationClaim()
-        {
-        }
+        public int Id { get; set; }
+        public User User { get; set; }
+        public int UserId { get; set; }
+        public OperationClaim OperationClaim { get; set; }
+        public int OperationClaimId { get; set; }
+
+
     }
 }
 

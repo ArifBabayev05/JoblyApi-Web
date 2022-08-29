@@ -1,9 +1,13 @@
 ﻿using System;
 namespace Core.Utilities.Result
 {
-    public class SuccessResult
+    public class SuccessResult : Result
     {
-        public SuccessResult()
+        public SuccessResult() : base(true)
+        {
+        }
+
+        public SuccessResult(string message) : base(true, message)
         {
         }
     }

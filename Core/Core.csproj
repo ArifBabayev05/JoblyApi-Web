@@ -20,6 +20,9 @@
     <None Remove="Utilities\Security\Encyption\" />
     <None Remove="Utilities\Security\Hashing\" />
     <None Remove="Utilities\Security\JWT\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -39,5 +42,11 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.26" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.26">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.26" />
   </ItemGroup>
 </Project>
