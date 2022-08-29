@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataAccess\" />
+    <None Remove="Entities\" />
+    <None Remove="EntityFramework\" />
+    <None Remove="Extensions\" />
+    <None Remove="Utilities\" />
+    <None Remove="Entities\Concrete\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Utilities\Result\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Microsoft.Extensions.Configuration.Binder" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="Utilities\Security\" />
+    <None Remove="Utilities\Security\Encyption\" />
+    <None Remove="Utilities\Security\Hashing\" />
+    <None Remove="Utilities\Security\JWT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+    <Folder Include="Entities\" />
+    <Folder Include="EntityFramework\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Utilities\Result\" />
+    <Folder Include="Utilities\Security\" />
+    <Folder Include="Utilities\Security\Encyption\" />
+    <Folder Include="Utilities\Security\Hashing\" />
+    <Folder Include="Utilities\Security\JWT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.26" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.26" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.26" />
+  </ItemGroup>
+</Project>
