@@ -1,4 +1,8 @@
 ﻿<Properties StartupConfiguration="{6BD7B501-DC9F-4365-AD5B-182A294ED2C3}|Default">
-  <MonoDevelop.Ide.ItemProperties.JoblyAPI FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.JoblyAPI PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Core FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Business FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DataAccess FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Entities FirstBuild="True" />
   <MultiItemStartupConfigurations />
 </Properties>
