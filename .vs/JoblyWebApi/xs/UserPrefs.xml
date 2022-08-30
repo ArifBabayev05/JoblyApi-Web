@@ -1,18 +1,74 @@
 ﻿<Properties StartupConfiguration="{57E999FD-8875-4EC7-8257-11CBE2D1DE08}|Default">
-  <MonoDevelop.Ide.ItemProperties.Core FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.DataAccess FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.JoblyWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Entity FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.JoblyWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataAccess/Concrete/EntityFramework/Contexts/NorthwindContext.cs">
+    <Files>
+      <File FileName="Business/Concrete/UserManager.cs" Line="15" Column="32" />
+      <File FileName="Business/Concrete/ProductManager.cs" Line="81" Column="63" />
+      <File FileName="Business/Concrete/CategoryManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Concrete/AuthManager.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/IUserService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/IProductService.cs" Line="1" Column="1" />
+      <File FileName="Business/Abstract/ICategoryService.cs" Line="1" Column="1" />
+      <File FileName="Core/DataAccess/IEntityRepository.cs" Line="1" Column="1" />
+      <File FileName="Core/DataAccess/EntityFramework/EfEntityRepositoryBase.cs" Line="1" Column="1" />
+      <File FileName="Core/Extensions/ClaimExtensions.cs" Line="30" Column="6" />
+      <File FileName="Core/Utilities/Results/DataResult.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/ErrorDataResult.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/Result.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Abstract/ICategoryDal.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Abstract/IProductDal.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Abstract/IUserDal.cs" Line="1" Column="1" />
+      <File FileName="JoblyWebApi/Startup.cs" Line="6" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfProuctDal.cs" Line="12" Column="2" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfUserDal.cs" Line="3" Column="19" />
+      <File FileName="Core/Entities/Concrete/OperationClaim.cs" Line="1" Column="1" />
+      <File FileName="Core/Entities/Concrete/User.cs" Line="1" Column="1" />
+      <File FileName="Core/Entities/Concrete/UserOperationClaim.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/Contexts/NorthwindContext.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="JoblyWebApi" expanded="True" selected="True">
-            <Node name="JoblyWebApi" expanded="True" />
+          <Node name="JoblyWebApi" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True" />
+              <Node name="Constants" expanded="True" />
+              <Node name="DependencyResolvers" expanded="True">
+                <Node name="AutoFac" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Core" expanded="True">
+              <Node name="DataAccess" expanded="True">
+                <Node name="EntityFramework" expanded="True" />
+              </Node>
+              <Node name="Entities" expanded="True">
+                <Node name="Concrete" expanded="True" />
+              </Node>
+              <Node name="Extensions" expanded="True" />
+              <Node name="Utilities" expanded="True">
+                <Node name="Results" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DataAccess" expanded="True">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True">
+                  <Node name="Contexts" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Entities" expanded="True">
+              <Node name="Concrete" expanded="True" />
+              <Node name="Dtos" expanded="True" />
+            </Node>
+            <Node name="JoblyWebApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -21,5 +77,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Business FirstBuild="True" />
+  <DisabledProjects>
+    <String>Entity/Entity.csproj</String>
+  </DisabledProjects>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

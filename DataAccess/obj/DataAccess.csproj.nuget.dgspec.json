@@ -46,6 +46,16 @@
               "target": "Package",
               "version": "[3.1.26, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -114,8 +124,8 @@
               "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
                 "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj"
               },
-              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/Entity.csproj": {
-                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/Entity.csproj"
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj"
               }
             }
           }
@@ -131,6 +141,12 @@
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.26, )"
             },
@@ -165,14 +181,14 @@
         }
       }
     },
-    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/Entity.csproj": {
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/Entity.csproj",
-        "projectName": "Entity",
-        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/Entity.csproj",
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj",
         "packagesPath": "/Users/imac/.nuget/packages/",
-        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entity/obj/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/imac/.nuget/NuGet/NuGet.Config"
@@ -186,7 +202,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -199,7 +219,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.26, )"
             }

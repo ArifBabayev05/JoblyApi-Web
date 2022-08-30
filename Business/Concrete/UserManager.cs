@@ -1,16 +1,23 @@
 ﻿using System;
 using Core.Entities.Concrete;
 using System.Collections.Generic;
+using DataAccess.Abstract;
+using Business.Abstract;
 
 namespace Business.Concrete
 {
     public class UserManager : IUserService
     {
-        private IUserDal _userDal;
+        IUserDal _userDal;
 
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
+        }
+
+        public List<OperationClaim> GetClaims(User user)
+        {
+            return _userDal.GetClaims(user);
         }
 
         public void Add(User user)
@@ -18,14 +25,9 @@ namespace Business.Concrete
             _userDal.Add(user);
         }
 
-        public User GetByEmail(string email)
+        public User GetByMail(string email)
         {
             return _userDal.Get(u => u.Email == email);
-        }
-
-        public List<OperationClaim> GetClaims(User user)
-        {
-            return _userDal.GetClaims(user);
         }
     }
 }

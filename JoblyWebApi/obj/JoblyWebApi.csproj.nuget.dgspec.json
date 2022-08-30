@@ -4,14 +4,107 @@
     "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj": {}
   },
   "projects": {
-    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj": {
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj",
-        "projectName": "JoblyWebApi",
-        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj",
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/Business.csproj",
+        "projectName": "Business",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/Business.csproj",
         "packagesPath": "/Users/imac/.nuget/packages/",
-        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/obj/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/imac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj"
+              },
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/DataAccess.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/DataAccess.csproj"
+              },
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj",
+        "packagesPath": "/Users/imac/.nuget/packages/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/imac/.nuget/NuGet/NuGet.Config"
@@ -38,9 +131,288 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.22.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/DataAccess.csproj",
+        "packagesPath": "/Users/imac/.nuget/packages/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/imac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj"
+              },
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj",
+        "packagesPath": "/Users/imac/.nuget/packages/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/imac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj",
+        "projectName": "JoblyWebApi",
+        "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/JoblyWebApi.csproj",
+        "packagesPath": "/Users/imac/.nuget/packages/",
+        "outputPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/JoblyWebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/imac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/Business.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Business/Business.csproj"
+              },
+              "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj": {
+                "projectPath": "/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

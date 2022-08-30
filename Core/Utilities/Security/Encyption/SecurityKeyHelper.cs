@@ -1,6 +1,7 @@
 ﻿using System;
-using Microsoft.IdentityModel.Tokens;
+using System.Collections.Generic;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Core.Utilities.Security.Encyption
 {
@@ -12,4 +13,3 @@ namespace Core.Utilities.Security.Encyption
         }
     }
 }
-

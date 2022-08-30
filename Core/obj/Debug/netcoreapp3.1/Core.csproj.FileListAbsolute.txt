@@ -1,0 +1,13 @@
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.csproj.AssemblyReference.cache
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.AssemblyInfoInputs.cache
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.AssemblyInfo.cs
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.csproj.CoreCompileInputs.cache
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/bin/Debug/netcoreapp3.1/Core.deps.json
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/bin/Debug/netcoreapp3.1/Core.runtimeconfig.json
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/bin/Debug/netcoreapp3.1/Core.runtimeconfig.dev.json
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/bin/Debug/netcoreapp3.1/Core.dll
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/bin/Debug/netcoreapp3.1/Core.pdb
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.dll
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.pdb
+/Users/imac/Desktop/JoblyWebAPI/JoblyWebApi/Core/obj/Debug/netcoreapp3.1/Core.genruntimeconfig.cache

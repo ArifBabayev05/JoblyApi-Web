@@ -2,11 +2,10 @@
 using Business.Abstract;
 using Business.Constants;
 using Core.Entities.Concrete;
-using Core.Utilities.Result;
+using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
-using Core.Utilities.Security.JWT;
-using Entities.Concrete;
-using Entities.DTO;
+using Core.Utilities.Security.Jwt;
+using Entities.Dtos;
 
 namespace Business.Concrete
 {
@@ -21,21 +20,32 @@ namespace Business.Concrete
             _tokenHelper = tokenHelper;
         }
 
-        public IDataResult<AccessToken> CreateAccessToken(User user)
+        public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
         {
-            var claims = _userService.GetClaims(user);
-            _tokenHelper.CreateToken(user, claims);
-            return new SuccessDataResult<AccessToken>(Messages.AccessTokenCreated);
+            byte[] passwordHash, passwordSalt;
+            HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            var user = new User
+            {
+                Email = userForRegisterDto.Email,
+                FirstName = userForRegisterDto.FirstName,
+                LastName = userForRegisterDto.LastName,
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt,
+                Status = true
+            };
+            _userService.Add(user);
+            return new SuccessDataResult<User>(user, Messages.UserRegistered);
         }
 
-        public IDataResult<User> Login(UserForLoginDTO userForLoginDTO)
+        public IDataResult<User> Login(UserForLoginDto userForLoginDto)
         {
-            var userToCheck = _userService.GetByEmail(userForLoginDTO.Email);
+            var userToCheck = _userService.GetByMail(userForLoginDto.Email);
             if (userToCheck == null)
             {
                 return new ErrorDataResult<User>(Messages.UserNotFound);
             }
-            if (!HashingHelper.VerifyPasswordHash(userForLoginDTO.Password, userToCheck.PasswordHash, userToCheck.PasswordSalt))
+
+            if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password, userToCheck.PasswordHash, userToCheck.PasswordSalt))
             {
                 return new ErrorDataResult<User>(Messages.PasswordError);
             }
@@ -43,34 +53,20 @@ namespace Business.Concrete
             return new SuccessDataResult<User>(userToCheck, Messages.SuccessfulLogin);
         }
 
-        public IDataResult<User> Register(UserForRegisterDTO userForRegisterDTO, string password)
+        public IResult UserExists(string email)
         {
-            byte[] passwordSalt;
-            byte[] passwordHash;
-            //HashingHelper.CreatePasswordHash(password,out passwordHash, out passwordSalt);
-            HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
-            var user = new User
+            if (_userService.GetByMail(email) != null)
             {
-                Email = userForRegisterDTO.Email,
-                FirstName = userForRegisterDTO.Firstname,
-                LastName = userForRegisterDTO.Lastname,
-                PasswordHash = passwordHash,
-                PasswordSalt = passwordSalt,
-                Status = true
-
-            };
-            _userService.Add(user);
-            return new SuccessDataResult<User>(Messages.UserRegistered);
-
-        }
-
-        public IResult UserExist(string mail)
-        {
-            if (_userService.GetByEmail(mail) != null)
-            {
-                return new ErrorResult(Messages.UserAlreadyExist);
+                return new ErrorResult(Messages.UserAlreadyExists);
             }
             return new SuccessResult();
+        }
+
+        public IDataResult<AccessToken> CreateAccessToken(User user)
+        {
+            var claims = _userService.GetClaims(user);
+            var accessToken = _tokenHelper.CreateToken(user, claims);
+            return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
         }
     }
 }
