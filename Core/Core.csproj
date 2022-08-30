@@ -6,8 +6,12 @@
 
   <ItemGroup>
     <None Remove="DataAccess\" />
+    <None Remove="DataAccess\EntityFramework\" />
+    <None Remove="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\EntityFramework\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
 </Project>
