@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DataAccess\" />
+    <None Remove="Entities\" />
+    <None Remove="Utilities\" />
+    <None Remove="DataAccess\EntityFramework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="DataAccess\EntityFramework\" />
+  </ItemGroup>
 </Project>
